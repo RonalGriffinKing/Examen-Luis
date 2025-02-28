@@ -1,0 +1,8 @@
+flask
+flask-jwt-extended
+flask-pymongo
+flask-mail
+werkzeug
+firebase-admin
+python-dotenv
+gunicorn

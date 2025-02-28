@@ -1,0 +1,10 @@
+{
+  "name": "flask-tailwind",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npx tailwindcss -i source/static/css/input.css -o source/static/css/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.16"
+  }
+}

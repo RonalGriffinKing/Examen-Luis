@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="w-full h-screen flex flex-col items-center justify-center">
+    <nav class="fixed top-0 w-full h-[80px] bg-orange-500 flex flex-row items-center justify-center">
+        <div class="w-[80%] flex flex-col items-start pl-2">
+            <h1 class="text-white text-center text-2xl font-bold">Mis Mascotas</h1>
+        </div>
+    <div class="w-[20%] flex flex-row items-end justify-around ">
+        <a href="/" class="text-white hover:text-black font-bold">Home</a>|
+        <a href="/Login" class="text-white hover:text-black font-bold">Login</a>|
+        <a href="/Registrarme" class="text-white hover:text-black font-bold">Registro</a>
+    </div>
+    </nav>
+    <div class="w-[80%] h-[600px] mt-[90px] flex flex-col items-center justify-center bg-yellow-500 gap-3">
+        <form action="/Login" method="post" class="w-[100%] gap-3 h-full flex flex-col items-center justify-center">
+            <h1 class="text-white font-bold">Inicia Sesion</h1>
+            <input class="p-2 text-center rounded-md" type="email" placeholder="Ingresa tu correo" name="correo">
+            <input class="p-2 text-center rounded-md" type="password" placeholder="Ingresa tu Contraseña" name="contra">
+            <button type="submit" class="p-2 bg-black text-white w-[150px] rounded-lg hover:bg-white hover:text-black">Iniciar</button>
+        </form>
+        <h1 class="text-white font-bold">{{messages}}</h1>
+    </div>
+</body>
+</html>

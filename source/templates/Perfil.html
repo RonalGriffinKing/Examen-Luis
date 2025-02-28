@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask + Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="w-full h-screen flex flex-col items-center justify-center">
+    <nav class="fixed top-0 w-full h-[80px] bg-orange-500 flex flex-row items-center justify-center">
+        <div class="w-[80%] flex flex-col items-start pl-2">
+            <h1 class="text-white text-center text-2xl font-bold">Mis Mascotas</h1>
+        </div>
+    <div class="w-[20%] flex flex-row items-end justify-around ">
+        <a href="/Login" class="text-white hover:text-black font-bold">Var Carrito</a>|
+        <a href="/Registrarme" class="text-white hover:text-black font-bold">Cerrar Sesion</a>
+    </div>
+    </nav>
+    <div class="w-[80%] h-[600px] mt-[90px] flex flex-col items-center justify-center bg-orange-950">
+        <h1 class="text-white font-bold">{{messages}}</h1>
+        <h2 class="text-white font-bold">{{datos['nombre']}}</h2>
+        <h2 class="text-white font-bold">Has ingresado:{{datos['visitas']}}</h2>
+        <a href="/Tienda?token={{access_token}}"  class="p-2 w-[200px] bg-yellow-400 text-white text-center hover:bg-black hover:text-white">TIENDA</a>
+    </div>
+</body>
+</html>

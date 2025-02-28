@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask + Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="w-full h-screen flex flex-col items-center justify-center">
+    <nav class="fixed top-0 w-full h-[80px] bg-orange-500 flex flex-row items-center justify-center">
+        <div class="w-[80%] flex flex-col items-start pl-2">
+            <h1 class="text-white text-center text-2xl font-bold">Mis Mascotas</h1>
+        </div>
+    <div class="w-[20%] flex flex-row items-end justify-around ">
+        <a href="/" class="text-white hover:text-black font-bold">Home</a>|
+        <a href="/Login" class="text-white hover:text-black font-bold">Login</a>|
+        <a href="/Registrarme" class="text-white hover:text-black font-bold">Registro</a>
+    </div>
+    </nav>
+    <div class="w-[80%] h-[600px] mt-[90px] flex flex-col items-center justify-center bg-orange-950">
+        <h1 class="text-white font-bold">WELCOME A TU TIENDA FAVORITA</h1>
+    </div>
+</body>
+</html>
